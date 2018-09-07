@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "theface",
+    "scope": "/theface/Tinda.html",
+    "display": "browser",
+    "start_url": "https://ntnk1984.github.io/theface/Tinda.html",
+    "short_name": "face CTS",
+    "theme_color": "transparent",
+    "description": "face",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
