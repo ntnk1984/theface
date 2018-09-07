@@ -64,12 +64,12 @@
             "type": "image/png"
         },
         {
-            "src": "theface/Images/875f9175-0065-5932-9bbc-35acdb1211a9.webPlatform.png",
+            "src": "/Images/875f9175-0065-5932-9bbc-35acdb1211a9.webPlatform.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/Images/deb299e9-2239-20dd-b884-70028d1a3af3.webPlatform.png",
+            "src": "theface/Images/deb299e9-2239-20dd-b884-70028d1a3af3.webPlatform.png",
             "sizes": "96x96",
             "type": "image/png"
         },
