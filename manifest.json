@@ -3,7 +3,7 @@
     "lang": "en",
     "name": "theface",
     "scope": "/theface/Tinda.html",
-    "display": "browser",
+    "display": "fullscreen",
     "start_url": "https://ntnk1984.github.io/theface/Tinda.html",
     "short_name": "face CTS",
     "theme_color": "transparent",
