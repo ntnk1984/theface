@@ -6,7 +6,7 @@
  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <link rel="manifest" href="../manifest.json">
-<script src="../pwabuilder-sw-register.js"></script>
+<script src="https://ntnk1984.github.io/theface/pwabuilder-sw-register.js"></script>
 
  <style>
  body {
@@ -80,13 +80,6 @@ img.zoom {
 		$(this).removeClass('transition');
 	});
 });
-
- if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-  }
-})();
     
  </script>
  <!-- Navigation -->
