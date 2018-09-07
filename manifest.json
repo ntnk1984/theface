@@ -54,7 +54,7 @@
             "type": "image/png"
         },
         {
-            "src": "theface/Iimages/1fb23991-4d53-bba9-ca92-6d0234bd6357.webPlatform.png",
+            "src": "theface/Images/1fb23991-4d53-bba9-ca92-6d0234bd6357.webPlatform.png",
             "sizes": "620x300",
             "type": "image/png"
         },
@@ -104,7 +104,7 @@
             "type": "image/png"
         },
         {
-            "src": "/images/ef7f10e9-afc4-8cb5-b230-41a16da26124.webPlatform.png",
+            "src": "theface/Images/ef7f10e9-afc4-8cb5-b230-41a16da26124.webPlatform.png",
             "sizes": "76x76",
             "type": "image/png"
         }
