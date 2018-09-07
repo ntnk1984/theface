@@ -14,7 +14,7 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "theface/Images/3fcc0ecf-2d80-9cb2-8316-a84193968813.webPlatform.png",
+            "src": "https://ntnk1984.github.io/theface/Images/3fcc0ecf-2d80-9cb2-8316-a84193968813.webPlatform.png",
             "sizes": "44x44",
             "type": "image/png"
         },
