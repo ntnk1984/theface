@@ -6,7 +6,7 @@ if (navigator.serviceWorker.controller) {
 } else {
   //Register the ServiceWorker
   navigator.serviceWorker.register('https://ntnk1984.github.io/theface/pwabuider-sw.js').then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
+    console.log('Service worker has been registered for scope:');
   });
 }
 
