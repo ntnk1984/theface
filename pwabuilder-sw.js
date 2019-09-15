@@ -5,7 +5,7 @@ const resourceToCache = ['/'];
 //Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener('install', function(event) {
   
-  event..waitUntil(
+  event.waitUntil(
   caches.open(cachName)
   .then(function(cach){
   return cache.addAll(resourceToCache);
