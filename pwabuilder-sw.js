@@ -7,7 +7,7 @@ self.addEventListener('install', function(event) {
   
   event.waitUntil(
   caches.open(cachName)
-  .then(function(cach){
+  .then(function(cache){
   return cache.addAll(resourceToCache);
   })
   );
