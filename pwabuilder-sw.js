@@ -1,6 +1,11 @@
 //This is the "Offline page" service worker
 const cachName = 'static-shell-v1';
-const resourceToCache = ['/'];
+const resourceToCache = ['/'
+                        , './fancybox/jquery.mousewheel-3.0.4.pack.js'
+                         ,'./fancybox/jquery.fancybox-1.3.4.pack.js'
+                         , './fancybox/jquery.fancybox-1.3.4.css'
+                         , 'style.css'
+                        ];
 
 //Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener('install', function(event) {
@@ -8,29 +13,25 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
   caches.open(cachName)
   .then(function(cache){
-  return cache.addAll(resourceToCache);
+  return cache.addAll(resourceToCache).then(() => self.skipWaiting());
   })
   );
   
 });
 
-//If any fetch fails, it will show the offline page.
-//Maybe this should be limited to HTML documents?
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function(error) {
-      console.error( '[PWA Builder] Network request Failed. Serving offline page ' + error );
-      return caches.open('pwabuilder-offline').then(function(cache) {
-        return cache.match('offline.html');
-      });
-    }
-  ));
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
 });
 
-//This is a event that can be fired from your page to tell the SW to update the offline page
-self.addEventListener('refreshOffline', function(response) {
-  return caches.open('pwabuilder-offline').then(function(cache) {
-    console.log('[PWA Builder] Offline page updated from refreshOffline event: '+ response.url);
-    return cache.put(offlinePage, response);
-  });
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request, {ignoreSearch: true}))
+      .then(response => {
+      return response || fetch(event.request);
+    })
+  );
 });
+
+
