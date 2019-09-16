@@ -1,5 +1,5 @@
 //This is the "Offline page" service worker
-const cachName = 'static-shell-v1';
+const cachName = 'static-shell-v2';
 const resourceToCache = ['/theface'
                          , '/theface/Tinda.html'
                         , './fancybox/jquery.mousewheel-3.0.4.pack.js'
