@@ -2,10 +2,10 @@
 const cachName = 'static-shell-v2';
 const resourceToCache = ['/theface'
                          , '/theface/Tinda.html'
-                        , './fancybox/jquery.mousewheel-3.0.4.pack.js'
-                         ,'./fancybox/jquery.fancybox-1.3.4.pack.js'
-                         , './fancybox/jquery.fancybox-1.3.4.css'
-                         , 'style.css'
+                        , '/theface/fancybox/jquery.mousewheel-3.0.4.pack.js'
+                         ,'/theface/fancybox/jquery.fancybox-1.3.4.pack.js'
+                         , '/theface/fancybox/jquery.fancybox-1.3.4.css'
+                         , '/theface/style.css'
                         ];
 
 //Install stage sets up the offline page in the cache and opens a new cache
