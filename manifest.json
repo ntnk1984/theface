@@ -2,7 +2,7 @@
     "dir": "ltr",
     "lang": "en",
     "name": "theface",
-    "scope": "/theface",
+    "scope": "/theface/",
     "display": "fullscreen",
     "start_url": "https://ntnk1984.github.io/theface/Tinda.html",
     "short_name": "face CTS",
