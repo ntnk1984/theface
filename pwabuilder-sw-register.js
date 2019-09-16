@@ -12,7 +12,7 @@
 
 
 if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/theface/pwabuilder-sw.js', { scope: '/' })
+        navigator.serviceWorker.register('/theface/pwabuilder-sw.js', { scope: '/theface' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
